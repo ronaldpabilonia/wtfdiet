@@ -1,0 +1,16 @@
+<section>
+	<div>
+		<h1><span>w</span>hat <span>t</span>he <span>f</span>#^& <span>d</span>o <span>i </span><span>e</span>at <span>t</span>oday?</h1>
+	</div>
+	<div>
+		<p>Hmmm... I'm about to have...</p>
+	</div>
+	<div>
+		<div *ngFor="let homeButton of homeButtons; index as i;">
+			<a mat-raised-button color="warn" href="{{homeButton.link}}" [ngClass]="homeButton.icon">
+				<mat-icon aria-hidden="false" aria-label="{{homeButton.text}}">{{homeButton.icon}}</mat-icon>
+				<span> {{homeButton.text}}</span>
+			</a>
+		</div>
+	</div>
+</section>

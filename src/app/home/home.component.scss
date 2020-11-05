@@ -1,0 +1,61 @@
+$orange-600: #FB8C00;
+$red-600: #E53935;
+$red-900: #B71C1C;
+$blue-200: #90CAF9;
+$purple-700: #512DA8;
+$yellow-700: #FFD600;
+
+@mixin logo-text {
+	text-align: center;
+	line-height: normal;
+	font-size: 64px;
+	font-weight: bold;
+	color: $red-600;
+}
+
+@mixin display-text {
+	text-align: center;
+	line-height: normal;
+	font-size: 24px;
+}
+
+@mixin home-btn {
+	width: 100%;
+	padding: 8px 24px;
+	font-size: 24px;
+}
+
+section {
+	width: 50%;
+	padding-top: 64px;
+	margin-left: auto;
+	margin-right: auto;
+	div {
+		h1 {
+			@include logo-text;
+			span {
+				color: $red-900;
+			}
+		}
+		p {
+			margin-top: 64px;
+			@include display-text;
+		}
+		a {
+			margin-top: 16px;
+			@include home-btn;
+			&.free_breakfast {
+				background: $orange-600;
+			}
+			&.wb_sunny {
+				background: $blue-200;
+			}
+			&.nights_stay {
+				background: $purple-700;
+			}
+			&.tapas {
+				background: $yellow-700;
+			}
+		}
+	}
+}
