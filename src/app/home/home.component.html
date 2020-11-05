@@ -7,7 +7,7 @@
 	</div>
 	<div>
 		<div *ngFor="let homeButton of homeButtons; index as i;">
-			<a mat-raised-button color="warn" href="/{{homeButton.link}}" [ngClass]="homeButton.icon">
+			<a mat-raised-button color="warn" href="{{homeButton.link}}" [ngClass]="homeButton.icon">
 				<mat-icon aria-hidden="false" aria-label="{{homeButton.text}}">{{homeButton.icon}}</mat-icon>
 				<span> {{homeButton.text}}</span>
 			</a>
